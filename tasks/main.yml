@@ -1,0 +1,6 @@
+---
+- name: ensure postgresql
+  block:
+    - import_tasks: packages.yml
+  tags:
+    - postgresql
