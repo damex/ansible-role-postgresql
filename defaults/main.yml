@@ -1,0 +1,10 @@
+---
+postgresql_package_name: "postgresql"
+postgresql_package_version: ""
+postgresql_package_state: "present"
+postgresql_contrib_package_name: "postgresql-contrib"
+postgresql_contrib_package_version: ""
+postgresql_contrib_package_state: "present"
+postgresql_psycopg2_package_name: "python3-psycopg2"
+postgresql_psycopg2_package_version: ""
+postgresql_psycopg2_package_state: "present"

@@ -1,0 +1,15 @@
+---
+- name: ensure postgresql packages
+  include_role:
+    name: "damex.package"
+  vars:
+    package_packages:
+      - name: "{{ postgresql_package_name }}"
+        version: "{{ postgresql_package_version }}"
+        state: "{{ postgresql_package_state }}"
+      - name: "{{ postgresql_contrib_package_name }}"
+        version: "{{ postgresql_contrib_package_version }}"
+        state: "{{ postgresql_contrib_package_state }}"
+      - name: "{{ postgresql_psycopg2_package_name }}"
+        version: "{{ postgresql_psycopg2_package_version }}"
+        state: "{{ postgresql_psycopg2_package_state }}"
