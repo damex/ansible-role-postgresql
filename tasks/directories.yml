@@ -1,0 +1,12 @@
+---
+- name: ensure postgresql directories
+  file:
+    path: "{{ item }}"
+    owner: "{{ postgresql_user }}"
+    group: "{{ postgresql_group }}"
+    state: directory
+    mode: 0750
+  loop:
+    - "{{ postgresql_conf_dir }}"
+    - "{{ postgresql_data_dir }}"
+  become: true

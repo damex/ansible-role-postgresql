@@ -1,0 +1,11 @@
+---
+- name: ensure postgresql ssl requirements
+  fail:
+    msg: >
+      Please make sure that postgresql ssl variables are defined:
+        - postgresql_ssl_ca
+        - postgresql_ssl_cert
+        - postgresql_ssl_key
+  when:
+    - postgresql_ssl
+    - not postgresql_ssl_ca or not postgresql_ssl_cert or not postgresql_ssl_key

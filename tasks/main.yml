@@ -1,6 +1,9 @@
 ---
 - name: ensure postgresql
   block:
+    - import_tasks: prerequisites.yml
     - import_tasks: packages.yml
+    - import_tasks: directories.yml
+    - import_tasks: postgresql.conf.yml
   tags:
     - postgresql
