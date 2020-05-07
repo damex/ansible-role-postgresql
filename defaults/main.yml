@@ -18,6 +18,11 @@ postgresql_pid_dir: "/run/postgresql"
 postgresql_pid_file: "{{ postgresql_version }}-{{postgresql_cluster_name}}.pid"
 postgresql_cluster_dir: "{{ postgresql_version }}/{{ postgresql_cluster_name }}"
 
+postgresql_pg_ident:
+  - mapname: "{{ postgresql_user }}"
+    system_username: "{{ postgresql_user }}"
+    pg_username: "{{ postgresql_user }}"
+
 # File Locations
 postgresql_data_dir: "{{ postgresql_home_dir }}/{{ postgresql_cluster_dir }}"
 postgresql_config_file: "{{ postgresql_conf_dir }}/postgresql.conf"
