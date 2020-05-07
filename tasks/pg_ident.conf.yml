@@ -1,0 +1,10 @@
+---
+- name: ensure pg_ident.conf
+  template:
+    src: pg_ident.conf.j2
+    dest: "{{ postgresql_ident_file }}"
+    owner: "{{ postgresql_user }}"
+    group: "{{ postgresql_group }}"
+    mode: 0640
+  become: true
+  register: postgresql_pg_ident_conf
