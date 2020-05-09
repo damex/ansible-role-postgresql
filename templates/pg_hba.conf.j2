@@ -1,0 +1,9 @@
+# {{ ansible_managed }}
+
+{% for connection in postgresql_pg_hba_default %}
+{{ connection.type }} {{ connection.database }} {{ connection.user }} {{ connection.address }} {{ connection.method }}
+{% endfor %}
+
+{% for connection in postgresql_pg_hba %}
+{{ connection.type }} {{ connection.database }} {{ connection.user }} {{ connection.address }} {{ connection.method }}
+{% endfor %}

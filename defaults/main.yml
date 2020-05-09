@@ -18,6 +18,34 @@ postgresql_pid_dir: "/run/postgresql"
 postgresql_pid_file: "{{ postgresql_version }}-{{postgresql_cluster_name}}.pid"
 postgresql_cluster_dir: "{{ postgresql_version }}/{{ postgresql_cluster_name }}"
 
+postgresql_pg_hba_default:
+  - type: local
+    database: all
+    user: "{{ postgresql_user }}"
+    address: ""
+    method: "peer"
+  - type: local
+    database: all
+    user: "{{ postgresql_user }}"
+    address: ""
+    method: "peer map={{ postgresql_user }}"
+  - type: local
+    database: all
+    user: all
+    address: ""
+    method: "md5"
+  - type: host
+    database: all
+    user: all
+    address: "127.0.0.1/32"
+    method: "md5"
+postgresql_pg_hba:
+  - type: host
+    database: all
+    user: all
+    address: "0.0.0.0/0"
+    method: "md5"
+
 postgresql_pg_ident:
   - mapname: "{{ postgresql_user }}"
     system_username: "{{ postgresql_user }}"
