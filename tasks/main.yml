@@ -5,6 +5,7 @@
     - import_tasks: packages.yml
     - import_tasks: directories.yml
     - import_tasks: postgresql.conf.yml
+    - import_tasks: pg_hba.conf.yml
     - import_tasks: pg_ident.conf.yml
   tags:
     - postgresql
