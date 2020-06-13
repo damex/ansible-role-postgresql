@@ -1,0 +1,8 @@
+---
+- name: ensure systemd service
+  include_role:
+    name: "damex.systemd_service"
+  vars:
+    systemd_service_name: "{{ postgresql_service_name }}"
+    systemd_service_reload_on: "{{ postgresql_pg_hba_conf.changed }}"
+    systemd_service_restart_on: "{{ postgresql_postgresql_conf.changed }}"
