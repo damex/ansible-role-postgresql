@@ -7,5 +7,6 @@
     - import_tasks: postgresql.conf.yml
     - import_tasks: pg_hba.conf.yml
     - import_tasks: pg_ident.conf.yml
+    - import_tasks: systemd.yml
   tags:
     - postgresql
