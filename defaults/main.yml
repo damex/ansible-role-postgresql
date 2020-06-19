@@ -297,7 +297,7 @@ postgresql_log_temp_files: -1
 postgresql_log_timezone: "UTC"
 
 # Error Reporting and Logging (Process Title)
-postgresql_cluster_name: "data"
+postgresql_cluster_name: "main"
 postgresql_update_process_title: false
 
 # Run-time Statistics (Query and Index Statistics Collector)
