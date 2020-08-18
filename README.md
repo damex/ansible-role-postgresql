@@ -1,6 +1,6 @@
 # ansible postgresql role
 
-[![Build Status](https://travis-ci.com/damex/ansible-role-postgresql.svg?branch=master)](https://travis-ci.com/damex/ansible-role-postgresql)
+[![linting](https://github.com/damex/ansible-role-postgresql/workflows/linting/badge.svg)](https://github.com/damex/ansible-role-postgresql/actions)
 
 The postgresql role is designed to be used with Debian distributive.
 
