@@ -7,6 +7,6 @@
     state: directory
     mode: 0750
   loop:
-    - "{{ postgresql_conf_dir }}"
-    - "{{ postgresql_data_dir }}"
+    - "{{ postgresql_cluster_configuration_directory }}"
+    - "{{ postgresql_cluster_data_directory }}"
   become: true

@@ -2,7 +2,7 @@
 - name: ensure postgresql.conf
   template:
     src: "postgresql.conf.j2"
-    dest: "{{ postgresql_conf_dir }}/postgresql.conf"
+    dest: "{{ postgresql_config_file }}"
     owner: "{{ postgresql_user }}"
     group: "{{ postgresql_group }}"
     mode: 0640
