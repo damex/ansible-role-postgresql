@@ -12,6 +12,9 @@ galaxy_info:
     - name: "Debian"
       versions:
         - "buster"
+    - name: Ubuntu
+      versions:
+        - "focal"
 dependencies:
   - role: "damex.package"
   - role: "damex.systemd_service"

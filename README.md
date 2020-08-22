@@ -2,7 +2,7 @@
 
 [![linting](https://github.com/damex/ansible-role-postgresql/workflows/linting/badge.svg)](https://github.com/damex/ansible-role-postgresql/actions)
 
-The postgresql role is designed to be used with Debian distributive.
+The postgresql role is designed to be used with `Debian Buster` and `Ubuntu Focal` distributives.
 
 `Ansible Galaxy` users can add postgresql role using the following command:
 
