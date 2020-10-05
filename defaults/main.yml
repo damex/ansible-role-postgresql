@@ -58,7 +58,7 @@ postgresql_cluster_data_directory: "{{ postgresql_home_directory }}/{{ postgresq
 postgresql_config_file: "{{ postgresql_cluster_configuration_directory }}/postgresql.conf"
 postgresql_hba_file: "{{ postgresql_cluster_configuration_directory }}/pg_hba.conf"
 postgresql_ident_file: "{{ postgresql_cluster_configuration_directory }}/pg_ident.conf"
-postgresql_ext_pid_file: "{{ postgresql_cluster_configuration_directory }}/{{ postgresql_pid_file }}"
+postgresql_external_pid_file: "{{ postgresql_pid_directory }}/{{ postgresql_pid_file }}"
 
 # Connections and Authentication (Connection Settings)
 postgresql_listen_addresses:

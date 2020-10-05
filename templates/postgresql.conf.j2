@@ -5,7 +5,7 @@ data_directory = '{{ postgresql_cluster_data_directory }}'
 config_file = '{{ postgresql_config_file }}'
 hba_file = '{{ postgresql_hba_file }}'
 ident_file = '{{ postgresql_ident_file }}'
-external_pid_file = '{{ postgresql_ext_pid_file }}'
+external_pid_file = '{{ postgresql_external_pid_file }}'
 
 # Connections and Authentication (Connection Settings)
 listen_addresses = '{{ postgresql_listen_addresses | join(',') }}'
